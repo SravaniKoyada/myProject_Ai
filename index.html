@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Lead Scoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>AI Lead Scoring Assistant</h2>
+
+    <form>
+
+        <div class="field">
+            <label>Demo Requested?</label>
+            <input type="radio" name="demo" value="yes"> Yes
+            <input type="radio" name="demo" value="no"> No
+        </div>
+
+        <div class="field">
+            <label>Registration Completed?</label>
+            <input type="radio" name="registration" value="yes"> Yes
+            <input type="radio" name="registration" value="no"> No
+        </div>
+
+        <div class="field">
+            <label>Enquiry via Call / WhatsApp?</label>
+            <input type="radio" name="call" value="yes"> Yes
+            <input type="radio" name="call" value="no"> No
+        </div>
+
+        <div class="field">
+            <label>Enquiry Date:</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="field">
+            <label>Plan Pricing Compared to Market:</label>
+            <select id="pricing">
+                <option value="">Select</option>
+                <option value="competitive">Competitive</option>
+                <option value="high">Higher than Market</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Lead through Event?</label>
+            <input type="radio" name="event" value="yes"> Yes
+            <input type="radio" name="event" value="no"> No
+        </div>
+
+        <div class="field">
+            <label>Lead through Referral?</label>
+            <input type="radio" name="referral" value="yes"> Yes
+            <input type="radio" name="referral" value="no"> No
+        </div>
+
+        <button type="button" onclick="calculateScore()">Calculate Score</button>
+
+    </form>
+
+    <div id="result" class="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
